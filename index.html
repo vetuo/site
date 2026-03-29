@@ -138,7 +138,55 @@
             </div>
             <div class="work__grid">
                 <article class="work__item work__item--large reveal">
-                    <div class="work__image" style="background: linear-gradient(135deg, #2D1B0E 0%, #5C3A1E 50%, #BF5B2E 100%);">
+                    <div class="work__image work__image--analytics">
+                        <svg class="work__svg" viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#2D1B0E"/>
+                                    <stop offset="100%" stop-color="#5C3A1E"/>
+                                </linearGradient>
+                                <linearGradient id="g1b" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#BF5B2E" stop-opacity="0.9"/>
+                                    <stop offset="100%" stop-color="#BF5B2E" stop-opacity="0.2"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Background -->
+                            <rect width="800" height="340" fill="url(#g1)"/>
+                            <!-- Grid lines -->
+                            <g stroke="#BF5B2E" stroke-opacity="0.1" stroke-width="1">
+                                <line x1="0" y1="68" x2="800" y2="68"/>
+                                <line x1="0" y1="136" x2="800" y2="136"/>
+                                <line x1="0" y1="204" x2="800" y2="204"/>
+                                <line x1="0" y1="272" x2="800" y2="272"/>
+                            </g>
+                            <!-- Area chart -->
+                            <path d="M0,280 Q80,260 160,230 T320,180 T480,200 T640,120 T800,90 L800,340 L0,340 Z" fill="url(#g1b)" opacity="0.3"/>
+                            <!-- Line chart -->
+                            <polyline points="0,280 80,260 160,230 240,210 320,180 400,195 480,200 560,160 640,120 720,105 800,90" fill="none" stroke="#BF5B2E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Data dots -->
+                            <g fill="#BF5B2E">
+                                <circle cx="320" cy="180" r="4"/>
+                                <circle cx="640" cy="120" r="4"/>
+                                <circle cx="800" cy="90" r="5" stroke="#2D1B0E" stroke-width="2"/>
+                            </g>
+                            <!-- Side panel - live metrics -->
+                            <rect x="600" y="180" width="170" height="130" rx="8" fill="#1A1814" fill-opacity="0.6"/>
+                            <rect x="620" y="200" width="60" height="6" rx="3" fill="#BF5B2E" opacity="0.5"/>
+                            <text x="690" y="206" fill="#BF5B2E" font-family="DM Sans,sans-serif" font-size="11" font-weight="600">102,847</text>
+                            <rect x="620" y="222" width="40" height="6" rx="3" fill="#BF5B2E" opacity="0.3"/>
+                            <text x="668" y="228" fill="#BF5B2E" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" opacity="0.7">98.7%</text>
+                            <rect x="620" y="248" width="80" height="4" rx="2" fill="#BF5B2E" opacity="0.15"/>
+                            <rect x="620" y="248" width="58" height="4" rx="2" fill="#BF5B2E" opacity="0.5"/>
+                            <rect x="620" y="264" width="80" height="4" rx="2" fill="#BF5B2E" opacity="0.15"/>
+                            <rect x="620" y="264" width="72" height="4" rx="2" fill="#BF5B2E" opacity="0.4"/>
+                            <rect x="620" y="280" width="80" height="4" rx="2" fill="#BF5B2E" opacity="0.15"/>
+                            <rect x="620" y="280" width="40" height="4" rx="2" fill="#BF5B2E" opacity="0.3"/>
+                            <!-- Pulse dot -->
+                            <circle cx="800" cy="90" r="8" fill="none" stroke="#BF5B2E" stroke-width="1" opacity="0.5">
+                                <animate attributeName="r" values="5;14;5" dur="2s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
                         <div class="work__image-inner">
                             <span class="work__tech">Elixir · Phoenix · LiveView</span>
                         </div>
@@ -149,7 +197,65 @@
                     </div>
                 </article>
                 <article class="work__item reveal reveal-delay-1">
-                    <div class="work__image" style="background: linear-gradient(135deg, #1A1814 0%, #3D362E 50%, #78716C 100%);">
+                    <div class="work__image work__image--ai">
+                        <svg class="work__svg" viewBox="0 0 400 230" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#1A1814"/>
+                                    <stop offset="100%" stop-color="#3D362E"/>
+                                </linearGradient>
+                                <radialGradient id="g2g" cx="50%" cy="50%">
+                                    <stop offset="0%" stop-color="#BF5B2E" stop-opacity="0.15"/>
+                                    <stop offset="100%" stop-color="#BF5B2E" stop-opacity="0"/>
+                                </radialGradient>
+                            </defs>
+                            <rect width="400" height="230" fill="url(#g2)"/>
+                            <ellipse cx="200" cy="115" rx="120" ry="100" fill="url(#g2g)"/>
+                            <!-- Neural network nodes -->
+                            <!-- Input layer -->
+                            <g fill="#BF5B2E" opacity="0.6">
+                                <circle cx="70" cy="60" r="6"/><circle cx="70" cy="115" r="6"/><circle cx="70" cy="170" r="6"/>
+                            </g>
+                            <!-- Hidden layer 1 -->
+                            <g fill="#BF5B2E" opacity="0.75">
+                                <circle cx="170" cy="45" r="7"/><circle cx="170" cy="90" r="7"/><circle cx="170" cy="140" r="7"/><circle cx="170" cy="185" r="7"/>
+                            </g>
+                            <!-- Hidden layer 2 -->
+                            <g fill="#BF5B2E" opacity="0.85">
+                                <circle cx="260" cy="55" r="7"/><circle cx="260" cy="115" r="7"/><circle cx="260" cy="175" r="7"/>
+                            </g>
+                            <!-- Output -->
+                            <circle cx="340" cy="115" r="9" fill="#BF5B2E" opacity="0.95"/>
+                            <!-- Connections -->
+                            <g stroke="#BF5B2E" stroke-width="0.7" opacity="0.15">
+                                <!-- Input to H1 -->
+                                <line x1="76" y1="60" x2="163" y2="45"/><line x1="76" y1="60" x2="163" y2="90"/>
+                                <line x1="76" y1="115" x2="163" y2="90"/><line x1="76" y1="115" x2="163" y2="140"/>
+                                <line x1="76" y1="170" x2="163" y2="140"/><line x1="76" y1="170" x2="163" y2="185"/>
+                                <line x1="76" y1="60" x2="163" y2="140"/><line x1="76" y1="170" x2="163" y2="45"/>
+                                <!-- H1 to H2 -->
+                                <line x1="177" y1="45" x2="253" y2="55"/><line x1="177" y1="90" x2="253" y2="55"/>
+                                <line x1="177" y1="90" x2="253" y2="115"/><line x1="177" y1="140" x2="253" y2="115"/>
+                                <line x1="177" y1="140" x2="253" y2="175"/><line x1="177" y1="185" x2="253" y2="175"/>
+                                <line x1="177" y1="45" x2="253" y2="115"/><line x1="177" y1="185" x2="253" y2="55"/>
+                                <!-- H2 to output -->
+                                <line x1="267" y1="55" x2="331" y2="115"/><line x1="267" y1="115" x2="331" y2="115"/><line x1="267" y1="175" x2="331" y2="115"/>
+                            </g>
+                            <!-- Highlighted connections -->
+                            <g stroke="#BF5B2E" stroke-width="1.2" opacity="0.4">
+                                <line x1="76" y1="60" x2="163" y2="45"/><line x1="177" y1="45" x2="253" y2="55"/>
+                                <line x1="267" y1="55" x2="331" y2="115"/>
+                            </g>
+                            <!-- Document cards -->
+                            <rect x="20" y="40" width="22" height="30" rx="3" fill="#BF5B2E" opacity="0.2"/>
+                            <rect x="20" y="100" width="22" height="30" rx="3" fill="#BF5B2E" opacity="0.2"/>
+                            <rect x="20" y="155" width="22" height="30" rx="3" fill="#BF5B2E" opacity="0.2"/>
+                            <!-- Output sparkle -->
+                            <circle cx="340" cy="115" r="14" fill="none" stroke="#BF5B2E" stroke-width="0.8" opacity="0.3">
+                                <animate attributeName="r" values="9;18;9" dur="3s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
                         <div class="work__image-inner">
                             <span class="work__tech">Elixir · AI · LLMs</span>
                         </div>
@@ -160,7 +266,77 @@
                     </div>
                 </article>
                 <article class="work__item reveal reveal-delay-2">
-                    <div class="work__image" style="background: linear-gradient(135deg, #1E293B 0%, #334155 50%, #BF5B2E 100%);">
+                    <div class="work__image work__image--distributed">
+                        <svg class="work__svg" viewBox="0 0 400 230" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#1E293B"/>
+                                    <stop offset="100%" stop-color="#334155"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="230" fill="url(#g3)"/>
+                            <!-- Central node -->
+                            <circle cx="200" cy="115" r="18" fill="#BF5B2E" opacity="0.2" stroke="#BF5B2E" stroke-width="1.5" stroke-opacity="0.6"/>
+                            <circle cx="200" cy="115" r="6" fill="#BF5B2E" opacity="0.8"/>
+                            <!-- Surrounding nodes - ring 1 -->
+                            <g>
+                                <circle cx="115" cy="65" r="12" fill="#BF5B2E" opacity="0.15" stroke="#BF5B2E" stroke-width="1" stroke-opacity="0.4"/>
+                                <circle cx="115" cy="65" r="4" fill="#BF5B2E" opacity="0.6"/>
+                                <circle cx="285" cy="65" r="12" fill="#BF5B2E" opacity="0.15" stroke="#BF5B2E" stroke-width="1" stroke-opacity="0.4"/>
+                                <circle cx="285" cy="65" r="4" fill="#BF5B2E" opacity="0.6"/>
+                                <circle cx="115" cy="165" r="12" fill="#BF5B2E" opacity="0.15" stroke="#BF5B2E" stroke-width="1" stroke-opacity="0.4"/>
+                                <circle cx="115" cy="165" r="4" fill="#BF5B2E" opacity="0.6"/>
+                                <circle cx="285" cy="165" r="12" fill="#BF5B2E" opacity="0.15" stroke="#BF5B2E" stroke-width="1" stroke-opacity="0.4"/>
+                                <circle cx="285" cy="165" r="4" fill="#BF5B2E" opacity="0.6"/>
+                            </g>
+                            <!-- Outer nodes - ring 2 -->
+                            <g>
+                                <circle cx="50" cy="40" r="8" fill="#BF5B2E" opacity="0.1" stroke="#BF5B2E" stroke-width="0.8" stroke-opacity="0.25"/>
+                                <circle cx="50" cy="40" r="3" fill="#BF5B2E" opacity="0.4"/>
+                                <circle cx="200" cy="30" r="8" fill="#BF5B2E" opacity="0.1" stroke="#BF5B2E" stroke-width="0.8" stroke-opacity="0.25"/>
+                                <circle cx="200" cy="30" r="3" fill="#BF5B2E" opacity="0.4"/>
+                                <circle cx="350" cy="40" r="8" fill="#BF5B2E" opacity="0.1" stroke="#BF5B2E" stroke-width="0.8" stroke-opacity="0.25"/>
+                                <circle cx="350" cy="40" r="3" fill="#BF5B2E" opacity="0.4"/>
+                                <circle cx="50" cy="190" r="8" fill="#BF5B2E" opacity="0.1" stroke="#BF5B2E" stroke-width="0.8" stroke-opacity="0.25"/>
+                                <circle cx="50" cy="190" r="3" fill="#BF5B2E" opacity="0.4"/>
+                                <circle cx="200" cy="200" r="8" fill="#BF5B2E" opacity="0.1" stroke="#BF5B2E" stroke-width="0.8" stroke-opacity="0.25"/>
+                                <circle cx="200" cy="200" r="3" fill="#BF5B2E" opacity="0.4"/>
+                                <circle cx="350" cy="190" r="8" fill="#BF5B2E" opacity="0.1" stroke="#BF5B2E" stroke-width="0.8" stroke-opacity="0.25"/>
+                                <circle cx="350" cy="190" r="3" fill="#BF5B2E" opacity="0.4"/>
+                            </g>
+                            <!-- Connections - center to ring 1 -->
+                            <g stroke="#BF5B2E" stroke-width="1" opacity="0.2">
+                                <line x1="200" y1="115" x2="115" y2="65"/>
+                                <line x1="200" y1="115" x2="285" y2="65"/>
+                                <line x1="200" y1="115" x2="115" y2="165"/>
+                                <line x1="200" y1="115" x2="285" y2="165"/>
+                            </g>
+                            <!-- Connections - ring 1 to ring 1 -->
+                            <g stroke="#BF5B2E" stroke-width="0.6" opacity="0.12">
+                                <line x1="115" y1="65" x2="285" y2="65"/>
+                                <line x1="115" y1="165" x2="285" y2="165"/>
+                                <line x1="115" y1="65" x2="115" y2="165"/>
+                                <line x1="285" y1="65" x2="285" y2="165"/>
+                            </g>
+                            <!-- Connections - ring 1 to ring 2 -->
+                            <g stroke="#BF5B2E" stroke-width="0.5" opacity="0.1">
+                                <line x1="115" y1="65" x2="50" y2="40"/>
+                                <line x1="115" y1="65" x2="200" y2="30"/>
+                                <line x1="285" y1="65" x2="200" y2="30"/>
+                                <line x1="285" y1="65" x2="350" y2="40"/>
+                                <line x1="115" y1="165" x2="50" y2="190"/>
+                                <line x1="115" y1="165" x2="200" y2="200"/>
+                                <line x1="285" y1="165" x2="200" y2="200"/>
+                                <line x1="285" y1="165" x2="350" y2="190"/>
+                            </g>
+                            <!-- Data flow pulse along one path -->
+                            <circle r="3" fill="#BF5B2E" opacity="0.8">
+                                <animateMotion dur="3s" repeatCount="indefinite" path="M50,190 L115,165 L200,115 L285,65 L350,40"/>
+                            </circle>
+                            <circle r="3" fill="#BF5B2E" opacity="0.6">
+                                <animateMotion dur="4s" repeatCount="indefinite" path="M350,190 L285,165 L200,115 L115,65 L50,40"/>
+                            </circle>
+                        </svg>
                         <div class="work__image-inner">
                             <span class="work__tech">Elixir · OTP · Distributed Systems</span>
                         </div>
