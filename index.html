@@ -54,8 +54,84 @@
                 </div>
             </div>
             <div class="hero__visual">
-                <div class="hero__orb hero__orb--1"></div>
-                <div class="hero__orb hero__orb--2"></div>
+                <svg class="hero__svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <!-- Terracotta radial gradient -->
+                        <radialGradient id="grad-accent" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#BF5B2E" stop-opacity="0.25"/>
+                            <stop offset="100%" stop-color="#BF5B2E" stop-opacity="0"/>
+                        </radialGradient>
+                        <!-- Warm gray radial gradient -->
+                        <radialGradient id="grad-muted" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#D9D2CA" stop-opacity="0.4"/>
+                            <stop offset="100%" stop-color="#D9D2CA" stop-opacity="0"/>
+                        </radialGradient>
+                        <!-- Terracotta linear gradient for lines -->
+                        <linearGradient id="grad-line" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#BF5B2E" stop-opacity="0"/>
+                            <stop offset="50%" stop-color="#BF5B2E" stop-opacity="0.15"/>
+                            <stop offset="100%" stop-color="#BF5B2E" stop-opacity="0"/>
+                        </linearGradient>
+                        <linearGradient id="grad-line-v" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#D9D2CA" stop-opacity="0"/>
+                            <stop offset="50%" stop-color="#D9D2CA" stop-opacity="0.2"/>
+                            <stop offset="100%" stop-color="#D9D2CA" stop-opacity="0"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Large ambient blobs -->
+                    <ellipse class="hero__svg-blob1" cx="520" cy="260" rx="280" ry="220" fill="url(#grad-accent)"/>
+                    <ellipse class="hero__svg-blob2" cx="350" cy="350" rx="240" ry="200" fill="url(#grad-muted)"/>
+                    <ellipse class="hero__svg-blob3" cx="650" cy="420" rx="180" ry="160" fill="url(#grad-muted)" opacity="0.6"/>
+
+                    <!-- Flowing organic curves -->
+                    <path class="hero__svg-curve1" d="M 100 200 C 250 100, 450 350, 700 180" fill="none" stroke="#BF5B2E" stroke-opacity="0.08" stroke-width="1.5"/>
+                    <path class="hero__svg-curve2" d="M 50 400 C 200 300, 500 500, 750 320" fill="none" stroke="#D9D2CA" stroke-opacity="0.15" stroke-width="1"/>
+                    <path class="hero__svg-curve1" d="M 200 80 C 350 250, 550 100, 780 280" fill="none" stroke="#BF5B2E" stroke-opacity="0.06" stroke-width="1"/>
+
+                    <!-- Network nodes and connections -->
+                    <g class="hero__svg-network" stroke="#BF5B2E" stroke-opacity="0.1" stroke-width="0.75">
+                        <!-- Connection lines -->
+                        <line x1="380" y1="150" x2="480" y2="220"/>
+                        <line x1="480" y1="220" x2="580" y2="180"/>
+                        <line x1="480" y1="220" x2="520" y2="320"/>
+                        <line x1="520" y1="320" x2="620" y2="360"/>
+                        <line x1="580" y1="180" x2="660" y2="240"/>
+                        <line x1="620" y1="360" x2="700" y2="310"/>
+                        <line x1="660" y1="240" x2="700" y2="310"/>
+                        <line x1="380" y1="150" x2="320" y2="230"/>
+                        <line x1="320" y1="230" x2="420" y2="290"/>
+                        <line x1="420" y1="290" x2="480" y2="220"/>
+                        <line x1="420" y1="290" x2="520" y2="320"/>
+                    </g>
+                    <!-- Node dots -->
+                    <g fill="#BF5B2E">
+                        <circle class="hero__svg-node" cx="380" cy="150" r="2.5" opacity="0.2"/>
+                        <circle class="hero__svg-node" cx="480" cy="220" r="3" opacity="0.25"/>
+                        <circle class="hero__svg-node" cx="580" cy="180" r="2" opacity="0.18"/>
+                        <circle class="hero__svg-node" cx="520" cy="320" r="2.5" opacity="0.2"/>
+                        <circle class="hero__svg-node" cx="620" cy="360" r="2" opacity="0.15"/>
+                        <circle class="hero__svg-node" cx="660" cy="240" r="3" opacity="0.22"/>
+                        <circle class="hero__svg-node" cx="700" cy="310" r="2.5" opacity="0.18"/>
+                        <circle class="hero__svg-node" cx="320" cy="230" r="2" opacity="0.15"/>
+                        <circle class="hero__svg-node" cx="420" cy="290" r="2.5" opacity="0.2"/>
+                    </g>
+
+                    <!-- Accent pulse dots -->
+                    <circle class="hero__svg-pulse" cx="480" cy="220" r="4" fill="none" stroke="#BF5B2E" stroke-opacity="0.2" stroke-width="0.75"/>
+                    <circle class="hero__svg-pulse" cx="660" cy="240" r="3.5" fill="none" stroke="#BF5B2E" stroke-opacity="0.15" stroke-width="0.75"/>
+
+                    <!-- Horizontal accent lines -->
+                    <line class="hero__svg-hline" x1="300" y1="130" x2="700" y2="130" stroke="url(#grad-line)" stroke-width="0.5"/>
+                    <line class="hero__svg-hline" x1="200" y1="440" x2="750" y2="440" stroke="url(#grad-line)" stroke-width="0.5"/>
+                    <!-- Vertical accent lines -->
+                    <line x1="450" y1="60" x2="450" y2="520" stroke="url(#grad-line-v)" stroke-width="0.5"/>
+                    <line x1="650" y1="100" x2="650" y2="500" stroke="url(#grad-line-v)" stroke-width="0.5"/>
+
+                    <!-- Geometric ring -->
+                    <circle class="hero__svg-ring" cx="550" cy="270" r="80" fill="none" stroke="#BF5B2E" stroke-opacity="0.06" stroke-width="0.75"/>
+                    <circle class="hero__svg-ring" cx="550" cy="270" r="120" fill="none" stroke="#D9D2CA" stroke-opacity="0.08" stroke-width="0.5"/>
+                </svg>
             </div>
             <div class="hero__scroll">
                 <span>Scroll</span>
