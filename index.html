@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vetuo — Software, Built with Craft</title>
     <meta name="description" content="I design and develop high-performance web applications with Elixir and AI. Let's build something great together.">
+    <meta name="theme-color" content="#F5F0EB">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="vetuo — Software, Built with Craft">
+    <meta property="og:description" content="I design and develop high-performance web applications with Elixir and AI. Let's build something great together.">
+    <meta property="og:url" content="https://vetuo.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="vetuo — Software, Built with Craft">
+    <meta name="twitter:description" content="I design and develop high-performance web applications with Elixir and AI. Let's build something great together.">
+
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E▾%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +25,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="#hero" class="skip-link">Skip to content</a>
     <header class="nav">
         <a href="#" class="nav__logo">vetuo</a>
         <nav class="nav__links">
@@ -226,38 +240,31 @@
                                     <stop offset="100%" stop-color="#BF5B2E" stop-opacity="0.2"/>
                                 </linearGradient>
                             </defs>
-                            <!-- Background -->
                             <rect width="800" height="340" fill="url(#g1)"/>
-                            <!-- Grid lines -->
                             <g stroke="#BF5B2E" stroke-opacity="0.1" stroke-width="1">
                                 <line x1="0" y1="68" x2="800" y2="68"/>
                                 <line x1="0" y1="136" x2="800" y2="136"/>
                                 <line x1="0" y1="204" x2="800" y2="204"/>
                                 <line x1="0" y1="272" x2="800" y2="272"/>
                             </g>
-                            <!-- Area chart -->
                             <path d="M0,280 Q80,260 160,230 T320,180 T480,200 T640,120 T800,90 L800,340 L0,340 Z" fill="url(#g1b)" opacity="0.3"/>
-                            <!-- Line chart -->
                             <polyline points="0,280 80,260 160,230 240,210 320,180 400,195 480,200 560,160 640,120 720,105 800,90" fill="none" stroke="#BF5B2E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <!-- Data dots -->
                             <g fill="#BF5B2E">
                                 <circle cx="320" cy="180" r="4"/>
                                 <circle cx="640" cy="120" r="4"/>
                                 <circle cx="800" cy="90" r="5" stroke="#2D1B0E" stroke-width="2"/>
                             </g>
-                            <!-- Side panel - live metrics -->
                             <rect x="600" y="180" width="170" height="130" rx="8" fill="#1A1814" fill-opacity="0.6"/>
                             <rect x="620" y="200" width="60" height="6" rx="3" fill="#BF5B2E" opacity="0.5"/>
-                            <text x="690" y="206" fill="#BF5B2E" font-family="DM Sans,sans-serif" font-size="11" font-weight="600">102,847</text>
+                            <text x="690" y="206" fill="#BF5B2E" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" aria-hidden="true">102,847</text>
                             <rect x="620" y="222" width="40" height="6" rx="3" fill="#BF5B2E" opacity="0.3"/>
-                            <text x="668" y="228" fill="#BF5B2E" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" opacity="0.7">98.7%</text>
+                            <text x="668" y="228" fill="#BF5B2E" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" opacity="0.7" aria-hidden="true">98.7%</text>
                             <rect x="620" y="248" width="80" height="4" rx="2" fill="#BF5B2E" opacity="0.15"/>
                             <rect x="620" y="248" width="58" height="4" rx="2" fill="#BF5B2E" opacity="0.5"/>
                             <rect x="620" y="264" width="80" height="4" rx="2" fill="#BF5B2E" opacity="0.15"/>
                             <rect x="620" y="264" width="72" height="4" rx="2" fill="#BF5B2E" opacity="0.4"/>
                             <rect x="620" y="280" width="80" height="4" rx="2" fill="#BF5B2E" opacity="0.15"/>
                             <rect x="620" y="280" width="40" height="4" rx="2" fill="#BF5B2E" opacity="0.3"/>
-                            <!-- Pulse dot -->
                             <circle cx="800" cy="90" r="8" fill="none" stroke="#BF5B2E" stroke-width="1" opacity="0.5">
                                 <animate attributeName="r" values="5;14;5" dur="2s" repeatCount="indefinite"/>
                                 <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite"/>
@@ -287,8 +294,6 @@
                             </defs>
                             <rect width="400" height="230" fill="url(#g2)"/>
                             <ellipse cx="200" cy="115" rx="120" ry="100" fill="url(#g2g)"/>
-                            <!-- Neural network nodes -->
-                            <!-- Input layer -->
                             <g fill="#BF5B2E" opacity="0.6">
                                 <circle cx="70" cy="60" r="6"/><circle cx="70" cy="115" r="6"/><circle cx="70" cy="170" r="6"/>
                             </g>
@@ -438,7 +443,7 @@
                 <p class="contact__text reveal reveal-delay-1">
                     I'm always interested in hearing about new projects. Whether you have a clear specification or just a rough idea, let's talk about how I can help bring it to life.
                 </p>
-                <a href="mailto:hi@vetuo.com" class="contact__email reveal reveal-delay-2">hi@vetuo.com</a>
+                <a href="mailto:hi@vetuo.com?subject=Project%20Inquiry" class="contact__email reveal reveal-delay-2">hi@vetuo.com</a>
                 <div class="contact__links reveal reveal-delay-3">
                     <a href="https://gonglexin.com" target="_blank" rel="noopener">Blog</a>
                     <a href="https://github.com/gonglexin" target="_blank" rel="noopener">GitHub</a>
