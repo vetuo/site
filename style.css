@@ -136,6 +136,18 @@ section { padding: var(--space-xl) 0; }
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav__logo svg {
+    flex-shrink: 0;
+    transition: transform var(--duration) var(--ease-out);
+}
+
+.nav__logo:hover svg {
+    transform: scale(1.08);
 }
 
 .nav__links { display: flex; align-items: center; gap: clamp(1.5rem, 3vw, 2.5rem); }
