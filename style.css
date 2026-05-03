@@ -463,9 +463,12 @@ section { padding: var(--space-xl) 0; }
     aspect-ratio: 2 / 1;
     overflow: hidden;
 }
-.product-card__svg {
+.product-card__img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
 }
 
 .product-card__body {
@@ -540,7 +543,7 @@ section { padding: var(--space-xl) 0; }
     aspect-ratio: auto;
     min-height: 100%;
 }
-.product-card--compact .product-card__svg {
+.product-card--compact .product-card__img {
     width: 100%;
     height: 100%;
     display: block;
